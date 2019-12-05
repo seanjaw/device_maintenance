@@ -25,8 +25,16 @@ The Data shows that there is a big drop in number of machine maintenances as tim
 - The dataset is imbalanced, about 0.1% of the classes are failures. We will need to be deal with this problem by either upsample or downsample.
 - The sparse number of distinctive values most likely represents a categorical variable. These attributes are attribute 3, 5, 7, 9, which I will encode for modeling. 
 - Attribute 7 and 8 are the same, so we will drop one of the columns.
-- Attribute 2, 3, 4, 5, 7, 9 are highly skewed. We will need to apply transformations. I thereofre applied a log +1p transformation to unskew.
+- Attribute 2, 3, 4, 5, 7, 9 are highly skewed. We will need to apply transformations. I therefore applied a log +1p transformation to unskew.
 - The magnitudes differ by a wide margin. Therefore scaling needs to be done. I used min max scaler to normalize the feature from range 0 to 1 and keep the outliers.
+
+## Device Classifaction Analysis
+
+There are 7 different types of devices. Below is the visualization of how often a device fails for each class.
+
+
+### Devices that are not removed after failure
+
 
 
 ### Oversampling
