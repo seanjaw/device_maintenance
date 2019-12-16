@@ -1,6 +1,5 @@
 # Device Failure Analysis
 
-# Overview 
 This readme covers the summary of the analysis on the device maintenance dataset. I will show the Exploratory Data Analysis, sampling, modeling, and results. The notebook can also be referenced for further insight. 
 
 We have the following problem:
