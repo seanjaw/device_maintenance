@@ -34,14 +34,13 @@ There are 7 different types of devices. Below is the visualization of how often 
 
 <img width="533" alt="Screen Shot 2019-12-05 at 4 02 38 PM" src="https://user-images.githubusercontent.com/29358337/70284425-c95c3880-1778-11ea-85ef-c7a7e583a792.png">
 
-### Devices that are not removed after failure
-
 # Model
 
 ### Oversampling Problem
 
-We will choose to oversample and perform cross validation.  
-### Convergence Test 
+- We will choose to oversample because there are not enough data to train the model. We have to be careful to split the dataset first and then oversample because Next, we will perform a cross validation and grid search. The
+
+- In order to avoid overfitting the model, we will create an ensemble of random forest and xgboost
 
 ### ROC Curve
 
