@@ -17,18 +17,15 @@ For more analysis and code, please check out the jupyter notebook.
 
 # Exploratory Data Analysis
 
-We can see that there are many different types of devivces. Some devices are checked numerous tines. 
+The graph below represents the amonut of devices that are checked day by day. From the visualization below, we can see that as each day passes, there are fewer devices that are being checked.
 
 <img width="463" alt="Screen Shot 2019-12-05 at 12 07 10 PM" src="https://user-images.githubusercontent.com/29358337/70269729-cd2b9300-1757-11ea-9879-430ad1082054.png">
 
-The Data shows that there is a big drop in number of machine maintenances as time passes by. 
+There are 7 different types of devices. Below is the visualization of how often a device fails for each class. 
 
 <img width="533" alt="Screen Shot 2019-12-05 at 4 02 38 PM" src="https://user-images.githubusercontent.com/29358337/70284425-c95c3880-1778-11ea-85ef-c7a7e583a792.png">
 
-There are 7 different types of devices. Below is the visualization of how often a device fails for each class.
-
-
-# Attributes Summary
+## Attributes Summary
 
 <img width="984" alt="Screen Shot 2019-12-05 at 12 42 34 PM" src="https://user-images.githubusercontent.com/29358337/70272249-cbb09980-175c-11ea-88bf-284b285de912.png">
 
