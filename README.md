@@ -34,9 +34,13 @@ There are 7 different types of devices. Below is the visualization of how often 
 <img width="569" alt="Screen Shot 2019-12-05 at 12 40 32 PM" src="https://user-images.githubusercontent.com/29358337/70272622-64dfb000-175d-11ea-95bc-69acaee5bb98.png">
 
 - The dataset is clean, and there are no missing values. All values are integer type. There is no need to fill in values.
+
 - The dataset is imbalanced, about 0.1% of the classes are failures. We will need to be deal with this problem by either upsampling or downsampling.
+
 - The sparse number of distinctive values in numerous columns most likely represents categorical variables. These attributes are attribute 3, 5, 7, 9, which I will encode for modeling purposes. 
+
 - Attribute 7 and 8 are the same, so we will drop one of the two columns.
+
 - Attribute 2, 3, 4, 5, 7, 9 are highly skewed. We will need to apply transformations. The magnitudes differ by a wide margin. Therefore scaling needs to be done. I used min max scaler to normalize the feature from range 0 to 1 and to keep the outliers.
 
 # Model
