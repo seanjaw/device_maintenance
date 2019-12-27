@@ -17,7 +17,7 @@ For more analysis and code, please check out the jupyter notebook.
 
 # Exploratory Data Analysis
 
-The graph below represents the amonut of devices that are checked day by day. From the visualization below, we can see that as each day passes, there are fewer devices that are being checked.
+The graph below represents the amount of devices that are checked day by day. From the visualization, we can see that as each day passes, there are fewer devices that are being checked.
 
 <img width="463" alt="Screen Shot 2019-12-05 at 12 07 10 PM" src="https://user-images.githubusercontent.com/29358337/70269729-cd2b9300-1757-11ea-9879-430ad1082054.png">
 
@@ -33,12 +33,11 @@ There are 7 different types of devices. Below is the visualization of how often 
 
 <img width="569" alt="Screen Shot 2019-12-05 at 12 40 32 PM" src="https://user-images.githubusercontent.com/29358337/70272622-64dfb000-175d-11ea-95bc-69acaee5bb98.png">
 
-- The dataset is clean, and there are no missing values. All values are integer type.
-- The dataset is imbalanced, about 0.1% of the classes are failures. We will need to be deal with this problem by either upsample or downsample.
-- The sparse number of distinctive values most likely represents a categorical variable. These attributes are attribute 3, 5, 7, 9, which I will encode for modeling. 
-- Attribute 7 and 8 are the same, so we will drop one of the columns.
-- Attribute 2, 3, 4, 5, 7, 9 are highly skewed. We will need to apply transformations. I therefore applied a log +1p transformation to unskew.
-- The magnitudes differ by a wide margin. Therefore scaling needs to be done. I used min max scaler to normalize the feature from range 0 to 1 and keep the outliers.
+- The dataset is clean, and there are no missing values. All values are integer type. There is no need to fill in values.
+- The dataset is imbalanced, about 0.1% of the classes are failures. We will need to be deal with this problem by either upsampling or downsampling.
+- The sparse number of distinctive values in numerous columns most likely represents categorical variables. These attributes are attribute 3, 5, 7, 9, which I will encode for modeling purposes. 
+- Attribute 7 and 8 are the same, so we will drop one of the two columns.
+- Attribute 2, 3, 4, 5, 7, 9 are highly skewed. We will need to apply transformations. The magnitudes differ by a wide margin. Therefore scaling needs to be done. I used min max scaler to normalize the feature from range 0 to 1 and to keep the outliers.
 
 # Model
 
