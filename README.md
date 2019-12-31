@@ -17,7 +17,7 @@ For more analysis and code, please check out the jupyter notebook.
 
 # Exploratory Data Analysis
 
-The graph below represents the amount of devices that are checked day by day. From the visualization, we can see that as each day passes, there are fewer devices that are being checked.
+The graph below represents the amount of devices that are checked day by day. From the visualization, we can see that as each day passes, there are fewer devices that are being checked. There is a notable drop in devices checked in the beginning. All of the data recorded is within one year from 11/02/2015 to 01/01/2015.
 
 <img width="463" alt="Screen Shot 2019-12-05 at 12 07 10 PM" src="https://user-images.githubusercontent.com/29358337/70269729-cd2b9300-1757-11ea-9879-430ad1082054.png">
 
@@ -25,7 +25,7 @@ There are 7 different types of devices. Below is the visualization of how often 
 
 <img width="533" alt="Screen Shot 2019-12-05 at 4 02 38 PM" src="https://user-images.githubusercontent.com/29358337/70284425-c95c3880-1778-11ea-85ef-c7a7e583a792.png">
 
-There are a total of 5 devices that were reused
+Most devices that fail are not reused. However, there are certain cases where a device is actually fixed and then resused for the future. There are a total of 5 cases below. 
 
 <img width="449" alt="Screen Shot 2019-12-29 at 4 53 14 PM" src="https://user-images.githubusercontent.com/29358337/71564850-212a4e80-2a5c-11ea-9096-a922bf78e571.png">
 
