@@ -36,6 +36,8 @@ Most devices that fail are not reused. However, there are certain cases where a 
 
 <img width="569" alt="Screen Shot 2019-12-05 at 12 40 32 PM" src="https://user-images.githubusercontent.com/29358337/70272622-64dfb000-175d-11ea-95bc-69acaee5bb98.png">
 
+### Summary of Attributes
+
 - The dataset is clean, and there are no missing values. All values are integer type. There is no need to fill in values.
 
 - The dataset is imbalanced, about 0.1% of the classes are failures. We will need to be deal with this problem by either upsampling or downsampling.
@@ -48,9 +50,9 @@ Most devices that fail are not reused. However, there are certain cases where a 
 
 # Model
 
-### Oversampling Problem
+### Bias In Data
 
-- We will choose to oversample because there are not enough data to train the model. We have to be careful to split the dataset first and then oversample because. 
+In our dataset, the majority of the results is not failure. We will choose to oversample because there are not enough data to train the model. We have to be careful to split the dataset first and then oversample because we do not want to duplicate observations from the train set into the test set. In addition, the observations are synthetic, which should be used for training, but are actually not the real results. If allowed, the model will overlearn and provide   
 
 ### ROC Curve
 
