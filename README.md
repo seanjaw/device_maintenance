@@ -62,7 +62,17 @@ In our dataset, the majority of the results is not failure. We will choose to ov
 
 <img width="397" alt="Screen Shot 2019-12-30 at 5 50 21 PM" src="https://user-images.githubusercontent.com/29358337/71607309-04aa1700-2b2d-11ea-86e0-5e288f4dbe82.png">
 
+### Grid Search
+
+<img width="689" alt="Screen Shot 2019-12-31 at 3 30 40 PM" src="https://user-images.githubusercontent.com/29358337/71636285-9fb0f880-2be2-11ea-9069-df96f5f7f571.png">
+
+### Model Results
+
+<img width="335" alt="Screen Shot 2019-12-31 at 3 34 50 PM" src="https://user-images.githubusercontent.com/29358337/71636322-1ea63100-2be3-11ea-959c-2881c1f5176b.png">
+
 # Deployment
+
+<img width="274" alt="Screen Shot 2019-12-31 at 3 32 42 PM" src="https://user-images.githubusercontent.com/29358337/71636299-d129c400-2be2-11ea-8b5b-3757f335721c.png">
 
 # Conclusion
 
