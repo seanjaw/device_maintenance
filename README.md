@@ -29,7 +29,6 @@ There are a total of 5 devices that were reused
 
 <img width="449" alt="Screen Shot 2019-12-29 at 4 53 14 PM" src="https://user-images.githubusercontent.com/29358337/71564850-212a4e80-2a5c-11ea-9096-a922bf78e571.png">
 
-### Attributes Summary
 
 <img width="984" alt="Screen Shot 2019-12-05 at 12 42 34 PM" src="https://user-images.githubusercontent.com/29358337/70272249-cbb09980-175c-11ea-88bf-284b285de912.png">
 
