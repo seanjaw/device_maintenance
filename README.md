@@ -51,17 +51,17 @@ There are a total of 5 devices that were reused
 
 ### Oversampling Problem
 
-- We will choose to oversample because there are not enough data to train the model. We have to be careful to split the dataset first and then oversample because Next, we will perform a cross validation and grid search. The
-
-- In order to avoid overfitting the model, we will create an ensemble of random forest and xgboost
+- We will choose to oversample because there are not enough data to train the model. We have to be careful to split the dataset first and then oversample because. 
 
 ### ROC Curve
 
+<img width="398" alt="Screen Shot 2019-12-30 at 5 49 12 PM" src="https://user-images.githubusercontent.com/29358337/71607296-f0661a00-2b2c-11ea-9937-ecded3a7975a.png">
 
-# Results
+### Learning Curve
 
+<img width="397" alt="Screen Shot 2019-12-30 at 5 50 21 PM" src="https://user-images.githubusercontent.com/29358337/71607309-04aa1700-2b2d-11ea-86e0-5e288f4dbe82.png">
 
-# Further Analysis
+# Deployment
 
 # Conclusion
 
