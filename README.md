@@ -4,16 +4,13 @@ We have the following problem:
 
 A company has a fleet of devices transmitting daily aggregated telemetry attributes. Predictive maintenance techniques are designed to help determine the condition of in-service equipments in order to predict when maintenance should be performed. This approach promises cost savings over routine or time-based preventive maintenance, because tasks are performed only when warranted.
 
-For more analysis and code, please check out the jupyter notebook. 
+For more analysis and code, please check out the Jupyter notebook. 
 
 # Overview
 
 - From the dataset, we will build a model that will determine whether a device needs maintenance utilizing Machine Learning techinuqes.
 - To do this, we will apply sampling methods to an imbalanced dataset and create in-depth data exploratory analysis to understand features
-- Our goal is to not only to have optimal metrics, but also minimize false negatives and false positives as much as possible
-
-
-
+- Our goal is to not only to have optimal metrics, but also minimize false negatives as much as possible
 
 # Exploratory Data Analysis
 
@@ -52,17 +49,23 @@ Most devices that fail are not reused. However, there are certain cases where a 
 
 ### Bias In Data
 
-In our dataset, the majority of the results is not failure. We will choose to oversample because there are not enough data to train the model. We have to be careful to split the dataset first and then oversample because we do not want to duplicate observations from the train set into the test set. In addition, the observations are synthetic, which should be used for training, but are actually not the real results. If allowed, the model will overlearn and provide   
+In our dataset, the majority of the results do not fail. As mentioned above, only about 0.1% of the classes are failures. Because we have a scarcity of data, we will choose to oversample on the failure to provide more data for modeling. We have to be careful to split the dataset first and then oversample because we do not want to duplicate observations from the train set into the test set to avoid overfitting or memorization of data points.
 
 ### ROC Curve
+
+The Receiver Operating Characteristic Curve compares the true positive rate versus the false positive rate. I have ran several models and plotted their ROC curve to determine which model provides the best combination of TPR and FPR based on the largest area under the curve (AUC). The XGBoost Model with an area of 0.92 provided the best result.
 
 <img width="398" alt="Screen Shot 2019-12-30 at 5 49 12 PM" src="https://user-images.githubusercontent.com/29358337/71607296-f0661a00-2b2c-11ea-9937-ecded3a7975a.png">
 
 ### Learning Curve
 
+The learning curve determines whether the models needs more samples to improve its score. The colored range surrounding the lines represents the amount of variance error. 
+
 <img width="397" alt="Screen Shot 2019-12-30 at 5 50 21 PM" src="https://user-images.githubusercontent.com/29358337/71607309-04aa1700-2b2d-11ea-86e0-5e288f4dbe82.png">
 
-### Grid Search
+### Grid Search and Cross Validation
+
+To improve our model's score, we will perform a grid search to find the best combination of parameters. Cross validation is used to allow more data to be used for model to learn and decide the parameters. 
 
 <img width="689" alt="Screen Shot 2019-12-31 at 3 30 40 PM" src="https://user-images.githubusercontent.com/29358337/71636285-9fb0f880-2be2-11ea-9069-df96f5f7f571.png">
 
@@ -75,5 +78,7 @@ In our dataset, the majority of the results is not failure. We will choose to ov
 <img width="274" alt="Screen Shot 2019-12-31 at 3 32 42 PM" src="https://user-images.githubusercontent.com/29358337/71636299-d129c400-2be2-11ea-8b5b-3757f335721c.png">
 
 # Conclusion
+
+We were able to create a model that solves our overfitting problem. While we were able to predict very highly in accuracy and precision, the recall score and f1 score is slightly lower. These scores may be improved if we have more information about the attributes. Time series analysis may be applied as well to analyze what caused the dip in checking devices in the first few days. 
 
 
